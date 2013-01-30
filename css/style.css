@@ -1,0 +1,406 @@
+* {
+ text-rendering: optimizeLegibility!important;
+ -webkit-font-smoothing: antialiased!important;
+ text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+a {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+/* for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+body {
+	background: #DCDDDF url("../img/login-bg.png") repeat;
+}
+
+.header-container {
+	padding-top: 40px;
+}
+
+header {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #18A3D6;
+	color: #e8f6fd;
+	height: 40px;
+	border-bottom: 1px solid gray;
+	
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#09C), to(#0071B8));
+	background-image: -webkit-linear-gradient(top, #09C, #0071B8);
+	background-image: -moz-linear-gradient(top, #09C, #0071B8);
+	background-image: -o-linear-gradient(top, #09C, #0071B8);
+	background-image: -ms-linear-gradient(top, #09C, #0071B8);
+	background-image: linear-gradient(top, #09C, #0071B8);
+}
+
+header .inner {
+	line-height: 40px;
+	width: 1120px;
+	margin: 0 auto;
+}
+
+header .inner .left {
+	float: left;
+}
+
+header .inner .right {
+	float: right;
+}
+
+header .inner .right ul {
+	list-style: none;
+	margin: 0;
+}
+
+header .inner .right li {
+	position: relative;
+	float: left;
+	padding-left: 7px;
+	padding-right: 7px;
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 14px;
+	text-shadow: #2075BE 0 1px 0;
+}
+
+header .inner .right li:hover {
+	background-color: #236B8E;
+}
+
+.dropdown {
+	position: absolute;
+	right: 0;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #81C6FF;
+	background-color: #fff;
+	color: #2281CF;
+	padding: 7px;
+	
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.dropdown-inner {
+	margin: 0;
+	padding: 0;
+	line-height: 14px;
+}
+
+.dropdown-arrow-border{
+	position: absolute;
+	top: -12px;
+	right: 30px;
+	border-bottom: 11px solid #81C6FF;
+	border-right: 11px solid transparent;
+	border-left: 11px solid transparent;
+	width: 0;
+	height: 0;
+}
+
+.dropdown-arrow {
+	position: absolute;
+	top: -10px;
+	right: 30px;
+	border-bottom: 11px solid white;
+	border-right: 11px solid transparent;
+	border-left: 11px solid transparent;
+	width: 0;
+	height: 0;
+}
+
+.logout {
+	cursor: pointer;
+}
+
+.side-nav {
+	position: fixed;
+	float: left;
+	width: 80px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: white;
+	border: 1px solid #D9D9D9;
+	padding: 0px 5px 5px 5px;
+	
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0px;
+	-o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0px;
+}
+
+.side-nav .circle {
+	width: 60px;
+	height: 60px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background-color: black;
+	margin: 0 auto;
+	margin-top: 5px;
+	background-color: #18A3D6;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#09C), to(#0071B8));
+	background-image: -webkit-linear-gradient(top, #09C, #0071B8);
+	background-image: -moz-linear-gradient(top, #09C, #0071B8);
+	background-image: -o-linear-gradient(top, #09C, #0071B8);
+	background-image: -ms-linear-gradient(top, #09C, #0071B8);
+	background-image: linear-gradient(top, #09C, #0071B8);
+}
+
+.container {
+	position: relative;
+	width: 1140px;
+	margin: 0 auto;
+
+}
+
+.main-content-wrapper {
+	width: 1035px;
+	float: right;
+	position: relative;
+	border: 1px solid #D9D9D9;
+	background-color: #fff;
+	margin: 0 auto;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0px;
+	-o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	min-height: 500px;
+}
+
+.left-col-wrapper {
+	float: left;
+	width: 761px;
+	padding: 7px;
+}
+
+.left-col-box {
+	position: relative;
+	float: left;
+  width: 218px;
+  height: 218px;
+  padding: 6px;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  margin-left: 20px;
+  margin-top: 20px;
+  
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  
+  -webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.left-col-box:hover {
+	-webkit-box-shadow: 0 0 20px rgba(13, 177, 233, 0.4);
+	-moz-box-shadow: 0 0 20px rgba(13, 177, 233, 0.4);
+	-ms-box-shadow: 0 0 20px rgba(13, 177, 233, 0.4);
+	-o-box-shadow: 0 0 20px rgba(13, 177, 233, 0.4);
+	box-shadow: 0 0 20px rgba(13,177,233,0.4);
+}
+
+.left-col-box-header {
+	position: absolute;
+	width: 100%;
+	opacity: .6;
+	filter:alpha(opacity=60);
+	background-color: #000;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	color: #FFF;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	bottom: 0px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10.5pt;
+	letter-spacing:.1em;
+	margin-left: -6px;
+}
+	
+.edit-bar-wrapper {
+	border-bottom: 1px solid #E8E9EB;
+	padding: 10px;
+	margin: -7px;
+}
+
+.edit-bar {
+	position: relative;
+	float: right;
+}
+
+.plus {
+	float: left;
+	width: 15px;
+	height: 15px;
+	background: url('images/glyphicons-halflings-white.png');
+	background-position: -408px -96px;
+}
+
+.blue {
+	border: 1px solid #005D92;
+	width: auto;
+	float: left;
+	background: #339CDF;
+	color: white;
+	padding: 7px 10px 8px 10px;
+	text-shadow: 0px -1px #278DB8;
+	margin: 0 12px 0 0;
+	cursor: pointer;
+	-o-box-shadow: 0 1px 1px rgba(0,0,0,0.3),inset 0px 1px 0px #83c5f1;
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3),inset 0px 1px 0px #83c5f1;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),inset 0px 1px 0px #83C5F1;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),inset 0px 1px 0px #83C5F1;
+	font-weight: bold;
+	}
+
+.blue:hover {
+	-o-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.right-col-wrapper {
+	float: right;
+	width: 260px;
+}
+
+.right-col-box {
+	border-bottom: 1px solid #E8E9EB;
+	border-left: 1px solid #E8E9EB;
+	padding: 10px;
+}
+
+.right-col-box-content {
+	height: 100px;
+}
+
+.right-col-wrapper .right-col-box h2 {
+	font: 12px  'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: green;
+	text-align: center;
+}
+
+
+.album-name-wrapper {
+	padding: 15px;
+	width: 515px;
+	height: 100% !important;
+}
+.album_name {
+	font: 12px  'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #8C7E7E;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+input.album_name {
+	width: 300px;
+	padding: 6px 12px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #8C7E7E;
+	border: 1px solid #AD9C9C;
+	
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-o-border-radius: 6px;
+	
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+}
+
+input.blue {
+	float: right;
+	height: 35px;
+	margin-top: 4px;
+}
+
+progress {
+	display: block;
+}
+
+.album_image:hover .image_settings{
+	display: block;
+}
+
+.image_settings {
+	display: none;
+	position: absolute;
+	top: 0;
+}
+
+.image_settings button {
+	border: 1px solid #BBB;
+	box-shadow: none;
+	color: #524D4D;
+	cursor: pointer;
+	display: inline;
+	font-family: 'helvetica neue', arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 11px;
+	margin-top: 7px;
+	padding: 7px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #F2EFEF;	
+	text-shadow: rgba(255, 255, 255, 0.901961) 0px 1px 0px;
+}
+
+.image_settings button:hover {
+	border-color: #524D4D;
+}
+
+
+

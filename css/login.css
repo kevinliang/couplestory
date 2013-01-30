@@ -1,0 +1,129 @@
+li#login-text:hover {
+	background-color: transparent;
+	cursor:pointer;
+}
+
+#loginButton {
+float: right;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+#loginButton:hover {
+	background-color: #236B8E;
+}
+
+#loginContainer {
+    position:relative;
+}
+
+#loginBox {
+    position:absolute;
+    display:none;
+    right: 0px;
+    z-index:99;
+}
+
+#loginForm {
+    width:248px; 
+    border:1px solid #899caa;
+    border-radius:3px 0 3px 3px;
+    -moz-border-radius:3px 0 3px 3px;
+    margin-top:-1px;
+    background:#d2e0ea;
+    padding:6px;
+    line-height: 14px;
+}
+
+#loginForm fieldset {
+    margin:0 0 12px 0;
+    display:block;
+}
+
+fieldset#body {
+    background:#fff;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    padding:10px 13px;
+    margin:0;
+}
+
+#loginForm #checkbox {
+    width:auto;
+    margin:1px 9px 0 0;
+    float:left;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+#body label {
+    color:#3a454d;
+    margin:9px 0 0 0;
+    display:block;
+    float:left;
+    font-size: 12px;
+}
+
+#loginForm #body fieldset label {
+    display:block;
+    float:none;
+    margin:0 0 6px 0;
+}
+
+
+#loginForm input {
+    width:92%;
+    border:1px solid #899caa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    color:#3a454d;
+    font-weight:bold;
+    padding:8px 8px;
+    box-shadow:inset 0px 1px 3px #bbb;
+    -webkit-box-shadow:inset 0px 1px 3px #bbb;
+    -moz-box-shadow:inset 0px 1px 3px #bbb;
+    font-size:12px;
+}
+
+#loginForm #login {
+  width:auto;
+  float:left;
+  background:#339cdf url(../img/login/loginbuttonbg.png) repeat-x;
+  color:#fff;
+  padding:7px 10px 8px 10px;
+  text-shadow:0px -1px #278db8;
+  border:1px solid #339cdf;
+  margin:0 12px 0 0;
+  cursor:pointer;
+  *padding:7px 2px 8px 2px; /* IE7 Fix */
+    
+  -o-box-shadow: 0 1px 1px rgba(0,0,0,0.3),inset 0px 1px 0px #83c5f1;
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3),inset 0px 1px 0px #83c5f1;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),inset 0px 1px 0px #83C5F1;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),inset 0px 1px 0px #83C5F1;
+}
+
+#loginForm #login:hover {
+	-o-box-shadow: none;
+  -moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+#loginForm span {
+    text-align:center;
+    display:block;
+    padding:7px 0 4px 0;
+}
+
+#loginForm span a {
+    color:#3a454d;
+    text-shadow:1px 1px #fff;
+    font-size:12px;
+}
+
+input:focus {
+    outline:none;
+}
